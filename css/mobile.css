@@ -1,0 +1,42 @@
+body {
+	background: url('../img/frame.jpg');
+}
+
+header h1 {
+	font-size: 200%;
+}
+
+header, img.spin {
+	bottom: 250px;
+	min-height: 200px;
+}
+
+
+header, footer {
+	width: 96%;
+	padding: 0 2%; margin: 0;
+}
+
+footer {
+	height: 250px;
+}
+
+footer::after{
+	content:'.';
+	clear:both;
+	display:none;
+}
+
+footer p {
+	width: 100%;
+	clear: left;
+	margin: 10px 0;
+}
+
+footer p img {
+	float: left;
+}
+
+video {
+	display: none;
+}

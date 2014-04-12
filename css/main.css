@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic);
+
+body {
+	background: #a0849b;
+	font: 100% 'Arvo', serif;
+	color: #fff;
+}
+::selection {
+	background: #333; /* Safari */
+	}
+::-moz-selection {
+	background: #333; /* Firefox */
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+img.spin, video.spin, header{
+	position: fixed;
+	left: 0;
+	bottom: 120px;
+	width: 100%;
+	z-index: -1;
+}
+
+header
+{
+	z-index: 2;
+	padding: 0 40px 20px;
+	text-shadow: 1px 1px 40px rgba(0, 0, 0, 0.3);
+}
+	header h1 {
+		font-size: 600%;
+	}
+	header a {
+		font-size: 120%;
+		color: #fff;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		padding: 0 10px 0 0;
+	}
+		header a:hover {
+			padding: 0 0 0 10px;
+		}
+
+footer{
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	width: 100%; height: 80px;
+	padding: 20px 40px;
+	background: #272727;
+	color:#fff;
+}
+	footer a {
+		border-bottom: 1px solid #999;
+	}
+		footer a:hover {
+			border-bottom: 1px solid #fff;
+		}
+	footer p {
+		width: 28%;
+		float: left;
+		margin-right: 3%;
+	}
+		footer p img {
+			float:right;
+			margin: 0 10px;
+		}

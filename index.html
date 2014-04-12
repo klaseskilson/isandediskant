@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+		<title>
+			Isande diskant
+		</title>
+
+		<!-- adaptive and regular style -->
+		<link rel="stylesheet" href="css/reset.css" media="all">
+		<link rel="stylesheet" href="css/main.css" media="all">
+		<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 480px)">
+	</head>
+
+	<body>
+		<div id="main">
+			<header>
+				<h1>
+					Isande diskant
+				</h1>
+				<p>
+					<a href="https://vimeo.com/79545746">► Se filmen</a>
+				</p>
+				<p>
+					Isande diskant har vunnit den Orange kuben 2013!
+				</p>
+			</header>
+			<footer>
+				<p class="whatisdis">
+					<em>Isande diskant</em> är en kortfilm producerad av Klas Eskilson,
+					Johan Henriksson, Daniel Rönnkvist & Olov Schurz vid Linköpings Universitet.
+				</p>
+				<p>
+					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fisandediskant.nu&amp;send=false&amp;layout=standard&amp;show_faces=true&amp;font&amp;colorscheme=dark&amp;action=like&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50%; height:80px;" allowTransparency="true"></iframe>
+				</p>
+			</footer>
+		</div><!-- #main -->
+		<img src="img/frame.jpg" class="spin" />
+		<video id="splashVideo" class="spin" autoplay='autoplay' loop="loop">
+			<source src="img/loooooop.mp4" type="video/mp4">
+			<!--<source src="img/loooop.webm" type="video/webm">-->
+			Your browser does not support the <code>video</code> element. Go get Google Chrome! (Google it!)
+		</video>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36814472-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		<script type="text/javascript" language="JavaScript">
+		<!--
+
+		dateFuture = new Date(2012,11,15,14,00,00);
+
+		function GetCount(){
+
+		        dateNow = new Date(); //grab current date
+		        amount = dateFuture.getTime() - dateNow.getTime(); //calc milliseconds between dates
+		        delete dateNow;
+
+		        // time is already past
+		        if(amount < 0){
+		                document.getElementById('countbox').innerHTML="ingen tid alls";
+		        }
+		        // date is still good
+		        else{
+		                days=0;hours=0;mins=0;secs=0;out="";
+
+		                amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
+
+		                days=Math.floor(amount/86400);//days
+		                amount=amount%86400;
+
+		                hours=Math.floor(amount/3600);//hours
+		                amount=amount%3600;
+
+		                mins=Math.floor(amount/60);//minutes
+		                amount=amount%60;
+
+		                secs=Math.floor(amount);//seconds
+
+		                if(days != 0){out += days +" dag"+((days!=1)?"ar":"")+", ";}
+		                if(days != 0 || hours != 0){out += hours +" timm"+((hours!=1)?"ar":"e")+", ";}
+		                if(days != 0 || hours != 0 || mins != 0){out += mins +" minut"+((mins!=1)?"er":"")+" och ";}
+		                out += secs +" sekunder kvar";
+		                document.getElementById('countbox').innerHTML=out;
+
+		                setTimeout("GetCount()", 1000);
+		        }
+		}
+
+		window.onload=function(){GetCount();}//call when everything has loaded
+
+		//-->
+		</script>
+	</body>
+</html>
